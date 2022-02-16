@@ -1,18 +1,5 @@
 <html>
     <head>
-        <style>
-            body {
-              background-image: url('fondito.jpg');
-            }
-            img {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            }
-            strong{
-                text-align: center;
-            }
-        </style>
         <link rel="stylesheet" href="./style.css">
         <title>Lab1</title> <!-- Nombre de mi archivo-->
         <meta charset="UTF-8"> <!-- set de caracteres especioales--> 
@@ -20,35 +7,36 @@
 
     <body text="#ffffff" link="#ffffff" vlink="#ffffff">
         <header> 
-            <h1 style="text-align:center";>Laboratorio 1</h1>
-            <h2 style="text-align:center";>Construcción de software y toma de decisiones</h2>
-            <h2 style="text-align:center";>Página web personal</h2>
-            <h3 style="text-align:center";>Ariann Fernando Arriaga Alcántara A01703556</h3>
-            <h3 style="text-align:center";>A01703556@tec.mx</h3>
+            <h1>Laboratorio 3</h1>
+            <h2>Construcción de software y toma de decisiones</h2>
+            <h2>Página web personal</h2>
+            <h3>Ariann Fernando Arriaga Alcántara A01703556</h3>
+            <h3>A01703556@tec.mx</h3>
             <img src="rotoproyecto2final_Moment.jpg" width="450px" >
         </header>
-
-        <p style="text-align:center";>Soy un estudiante de 20 años de Ingeniería de Tecnologías computacionales en el Tecnológico de Monterrey,
+        <ul class="cuerpo">
+        <h2>Sobre mi</h2>
+        <p>Soy un estudiante de 20 años de Ingeniería de Tecnologías computacionales en el Tecnológico de Monterrey,
         Me gusta leer, tocar el piano, jugar videojuegos, hacer ejercicio, programar en C++, enfocado al desarrollo de video juegos, mi hobbie favorito es el dibujo , y mi sueño es 
         desarrollar inteligencia artificial que ayude al beneficio de la humanidad.</p>
-        <p style="text-align:center";>Links a mis pagina web favorita :</p><!--P es parrafos-->
-        <ul style="text-align:center">
+        <p>Links a mis pagina web favorita :</p><!--P es parrafos-->
+        <ul>
             <li><a href="http://youtube.com">Página de youtube</a></li>
         </ul><!--lista con bullets-->
-        <strong><p style="text-align:center";>Conóce un poco más de mis proyectos</p></strong >
-        <p style="text-align:center;">
+        <strong>Conóce un poco más de mis proyectos</strong >
+        <p>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/E4aE0Alislk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
         </p>
-        <strong><p style="text-align:center";>Conóce un poco más de la música que me gusta</p></strong>
-        <p style="text-align:center;">
+        <strong>Conóce un poco más de la música que me gusta</strong>
+        <p>
         <iframe src="https://open.spotify.com/embed/playlist/6N4OpEkWtV9dRKH5UzPiOk" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
         </p>
-        <strong ><p style="text-align:center";>Plataformas de comunicación</p></strong>
-        <p style="text-align:center;">
+        <strong >Plataformas de comunicación</strong>
+        <p>
             <a href="https://www.instagram.com/ariann_arriaga/"><img src="insta.png" width="150px" ></a>
         </p>
-        <p style="text-align:center";>
-        <form>
+        </ul>
+        <form class="formu">
             <h2>Formulario de contacto telefónico</h2>
             <br>
             <label for="Numberphone">Coloque su número telefónico</label>
@@ -57,11 +45,12 @@
             <br>
             <input type="submit" value="Mandar contacto">
         </form>
-        </p>
         <br>
         <br>
         <br>
-        <strong> <p style="text-align:center";>Preguntas del laboratorio:</p></strong>
+        <ul class="editor">
+        <strong>Preguntas del laboratorio 1: </strong>
+        </ul>
         <ul class="formulario1">
                     <li class="pregunta">¿Cuál es la diferencia entre Internet y la World Wide Web?        
                         <ul>
@@ -215,66 +204,116 @@
                             </ul>
                         </li>
                     </ul>
-    </body>
-    <br>
-    <br>
-    <footer>
-        <strong> <p style="text-align:center";>El editor de texto utilizado para el desarrollo de esta página fue Visual Studio Code</p></strong>
-        <img src="VS-Code.png" width="150px" >
-        <p style="text-align:center";><a href="https://code.visualstudio.com/">Visita Visual Studio Code</a></p>
-        <br>
-        <br>
-        <strong>REFERENCIAS:</strong>
-        <ul>
-            <br>
-            <li>
-                S.A. (2018). 200 OK. febrero 14, 2022, de Mozilla Sitio web: https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html
+        <ul class="editor">
+            <strong>Preguntas del laboratorio 2: </strong>
+        </ul>
+        <ul class="formulario1">
+            <li class="pregunta"> Como ingeniero de software ¿cuál es tu recomendación sobre el uso de !important en un CSS?        
+                <ul>
+                        <br>
+                    <li>
+                        Respuesta: Mi recomendación como ingeniero de software, sobre el uso de !important en un CSS es que sea medido, controlado y limitado a las necesidades del sitio, y siempre usarse en elementos particulares para garantizar el buen funcionamiento, su uso es cuando se tiene una regla precedente a las demás, por ejemplo, cuando una clase interactua con un selector primario que es de estilo diferente.
+                    </li>
+                </ul>
             </li>
-            <br>
-            <li>
-                Pieters S. (2014). HTML5 Differences from HTML4. febrero 14, 2022, de W3C Sitio web: https://www.w3.org/TR/html5-diff/
+                <li class="pregunta"> Si se pone una imagen de fondo en una página HTML, ¿por qué debe escogerse con cuidado?
+                <ul>
+                    <br>
+                    <li>
+                        Respuesta: Debido a la posible obstrucción de la visibilidad de los elementos del sitio web, tal es como un texto que no resalte del fonde
+                    </li>
+                </ul>
             </li>
-            <br>
-            <li>
-                S.A. (2015). TABLAS EN HTML. febrero 14, 2022, de HTMLQUICK Sitio web: https://www.htmlquick.com/es/tutorials/tables.html
+            <li class="pregunta"> Como ingeniero de software, ¿cuál es tu recomendación al elegir las unidades de un propiedad de estilo entre %, px y pt?        
+                <ul>
+                        <br>
+                    <li>
+                        Respuesta: La recomendación al elegir unidades depende de la necesidad, ya que % al ser una unidad relativa, funciona muy bien cuando se trabaja con proporciones de elementos o dentro de contenedores y esto mismo hace que se adapte a diferentes tamaños de pantalla adecuando la proporción, el uso de px funciona como una medida relativa pero destaca en proporcionar exactitud en la visualización de elementos de un tamaño definido, en el caso de pt o punto se usa cuando un elemento en pantalla quiere ser puesto en tamaño real, es decir no es una unidad relativa sino establece medidas fijas.  
+                    </li>
+                </ul>
             </li>
-            <br>
-            <li>
-                Aviani, G. (2019). An introduction to HTTP: everything you need to know. febrero 14, 2022, de freecodecamp Sitio web: https://www.freecodecamp.org/news/http-and-everything-you-need-to-know-about-it/
-            </li>
-            <br>
-            <li>
-                Copes, F. (2019). The HTML Handbook. febrero 14, 2022, de freecodecamp. Sitio web: https://www.freecodecamp.org/news/the-html-handbook/
-            </li>
-            <br>
-            <li>
-                Ramos, C. (2022). HTTP Request Methods – Get vs Put vs Post Explained with Code Examples. febrero 14, 2022, de freecodecamp Sitio web: https://www.freecodecamp.org/news/http-request-methods-explained/
-            </li>
-            <br>
-            <li>
-                S, A. (2018). 500 Internal Server Error. febrero 14, 2022, de mozilla Sitio web: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500
-            </li>
-            <br>
-            <li>
-                Marco, B. (2020). Elementos obsoletos. febrero 14, 2022, de mclibre Sitio web: https://www.mclibre.org/consultar/htmlcss/html/html-obsoletos.htm
-            </li>
-            <br>
-            <li>
-                S, A. (2017). Métodos de petición HTTP. febrero 14, 2022, de mozilla Sitio web: https://developer.mozilla.org/es/docs/Learn/Forms/Basic_native_form_controls
-            </li>
-            <br>
-            <li>
-                S, A. (2019). Controles de formulario originales. febrero 14, 2022, de mozilla Sitio web: https://developer.mozilla.org/es/docs/Web/HTTP/Methods
-            </li>
-            <br>
-            <li>
-                S, A. (2018). El ciclo SDLC en 7 fases. febrero 14, 2022, de viewnext Sitio web: https://www.viewnext.com/el-ciclo-sdlc-en-7-fases/
-            </li>
-            <br>
-            <li>
-                Naranjo, M. (2018). Ciclo de vida de un sistema de informacion. febrero 14, 2022, de SlideShare Sitio web: https://www.slideshare.net/MonicaNaranjo20/ciclo-de-vida-de-un-sistema-de-informacion-93192099#:~:text=Ciclo%20de%20vida%20de%20un%20sistema%20%EF%82%A7%20El%20ciclo%20de,del%20analista%20y%20del%20usuario
+                <li class="pregunta">¿Por qué el uso de una versión minimizada del CSS mejora el rendimiento del sitio?
+                <ul>
+                    <br>
+                    <li>
+                        Respuesta: la versión minimizada del CSS mejora el rendimiento porque remueve bytes del archivo lo que hace un proceso de descarga, análisis y ejecución con más velocidad.
+                    </li>
+                </ul>
             </li>
         </ul>
-    </footer>
+        </body>
+        <br>
+        <br>
+        <footer>
+            <ul class="editor">
+            <strong><p>El editor de texto utilizado para el desarrollo de esta página fue Visual Studio Code<p></strong>
+            <img src="VS-Code.png" width="150px" >
+            <p><a href="https://code.visualstudio.com/">Visita Visual Studio Code</a></p>
+            </ul>
+            <br>
+            <ul class="referencias">
+                <br>
+                <strong>REFERENCIAS:</strong>
+                <br>
+                <br>
+                <li>
+                    S.A. (2018). 200 OK. febrero 14, 2022, de Mozilla Sitio web: https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html
+                </li>
+                <br>
+                <li>
+                    Pieters S. (2014). HTML5 Differences from HTML4. febrero 14, 2022, de W3C Sitio web: https://www.w3.org/TR/html5-diff/
+                </li>
+                <br>
+                <li>
+                    S.A. (2015). TABLAS EN HTML. febrero 14, 2022, de HTMLQUICK Sitio web: https://www.htmlquick.com/es/tutorials/tables.html
+                </li>
+                <br>
+                <li>
+                    Aviani, G. (2019). An introduction to HTTP: everything you need to know. febrero 14, 2022, de freecodecamp Sitio web: https://www.freecodecamp.org/news/http-and-everything-you-need-to-know-about-it/
+                </li>
+                <br>
+                <li>
+                    Copes, F. (2019). The HTML Handbook. febrero 14, 2022, de freecodecamp. Sitio web: https://www.freecodecamp.org/news/the-html-handbook/
+                </li>
+                <br>
+                <li>
+                    Ramos, C. (2022). HTTP Request Methods – Get vs Put vs Post Explained with Code Examples. febrero 14, 2022, de freecodecamp Sitio web: https://www.freecodecamp.org/news/http-request-methods-explained/
+                </li>
+                <br>
+                <li>
+                    S, A. (2018). 500 Internal Server Error. febrero 14, 2022, de mozilla Sitio web: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500
+                </li>
+                <br>
+                <li>
+                    Marco, B. (2020). Elementos obsoletos. febrero 14, 2022, de mclibre Sitio web: https://www.mclibre.org/consultar/htmlcss/html/html-obsoletos.htm
+                </li>
+                <br>
+                <li>
+                    S, A. (2017). Métodos de petición HTTP. febrero 14, 2022, de mozilla Sitio web: https://developer.mozilla.org/es/docs/Learn/Forms/Basic_native_form_controls
+                </li>
+                <br>
+                <li>
+                    S, A. (2019). Controles de formulario originales. febrero 14, 2022, de mozilla Sitio web: https://developer.mozilla.org/es/docs/Web/HTTP/Methods
+                </li>
+                <br>
+                <li>
+                    S, A. (2018). El ciclo SDLC en 7 fases. febrero 14, 2022, de viewnext Sitio web: https://www.viewnext.com/el-ciclo-sdlc-en-7-fases/
+                </li>
+                <br>
+                <li>
+                    Naranjo, M. (2018). Ciclo de vida de un sistema de informacion. febrero 14, 2022, de SlideShare Sitio web: https://www.slideshare.net/MonicaNaranjo20/ciclo-de-vida-de-un-sistema-de-informacion-93192099#:~:text=Ciclo%20de%20vida%20de%20un%20sistema%20%EF%82%A7%20El%20ciclo%20de,del%20analista%20y%20del%20usuario
+                </li>
+                <br>
+                <li>
+                    Jefferson M. (2020). !Important: ¿Qué es y cuándo usarlo?. febrero 15, 2022, de UXDiv Sitio web: https://uxdivi.com/blog/important-que-es-y-cuando-usarlo
+                </li>
+                <br>
+                <li>   
+                    Guerras A. (2016). Optimización CSS para mejorar el rendimiento de tu web. febrero 15, 2022, de AUKERA Sitio web: https://aukera.es/blog/optimizacion-css-mejora-el-rendimiento-de-tu-web/
+                </li>
+                <br>
+            </ul>
+            <br>
+        </footer>
 
 </html>
