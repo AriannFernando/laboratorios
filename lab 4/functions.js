@@ -25,11 +25,12 @@ else{
 document.getElementById('respuesta2').innerHTML = mensaje;
 //Ejercicio3
 const arreglo=[1,2,-2,4,-10,12,-2,34,50,-23,0,0];
-let positivos=0;
-let neutro=0;
-let negativos=0;
-let mensj="";
+
 function contador (arreglo){
+    let positivos=0;
+    let neutro=0;
+    let negativos=0;
+    let mensj="";
     for (let i = 0; i <= arreglo.length; i++){
         if(arreglo[i]<0){
             negativos=negativos+1;
@@ -48,11 +49,12 @@ document.getElementById('respuesta3').innerHTML = contador(arreglo);
 //Ejercicio4
 
 const matriz=[[1,2,2,4],[10,12,2,34],[50,23,34,12]];
-const matrizpromedio=[];
-let sumador=0;
-let promedio=0;
-let mensj2="";
+
 function promedios(matriz) {
+    const matrizpromedio=[];
+    let sumador=0;
+    let promedio=0;
+    let mensj2="";
     for (let i = 0; i < matriz.length; i++){
         for (let j = 0; j <  matriz[i].length; j++) {
             sumador=sumador+matriz[i][j];
@@ -66,10 +68,10 @@ function promedios(matriz) {
 }
 document.getElementById('respuesta4').innerHTML = promedios(matriz);
 //Ejercicio5
-let mensj3="";
 const numin = prompt("ingresa un número para obtener el inverso de los dígitos del número");
 const numref = numin;
 function inverso(numin) {
+    let mensj3="";
     let inverso = 0;
     while (numin != 0) {
         inverso = inverso * 10 + numin % 10
