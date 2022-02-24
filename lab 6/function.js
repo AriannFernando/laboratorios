@@ -131,7 +131,11 @@ function totalf (){
     document.getElementById("iva").innerHTML = `$${iva}`;
     document.getElementById("totIva").innerHTML = `$${totalIva}`;
 }
+document.getElementById("limpiar").addEventListener('mouseover', () => {
+    carro.insertAdjacentHTML('afterend', `<div class="col s12 banner">Gracias por visitarnos!</div>`)
+})
 
-document.querySelectorAll("h4").forEach(btn => btn.addEventListener('click', (event) => {
+
+document.querySelectorAll("h4").forEach(btn => btn.addEventListener('mouseover', (event) => {
     event.target.style.color = 'rgba(255, 0.8, 1, 0.5)';
 }));
