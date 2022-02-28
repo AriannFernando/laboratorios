@@ -5,9 +5,9 @@ const getLongestPalindrome = (string) => {
     let end = 0;
 
     for(let i = 0; i < string.length; i++) {
-        // del centro
+        
         let length1 = expandMiddle(string, i, i);
-        // de mitad y mitad
+      
         let length2 = expandMiddle(string, i, i+1);
         let finalLength = Math.max(length1, length2);
 
