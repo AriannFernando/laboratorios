@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+  <head>
+        <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+            
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+
+  <body>
+    <nav class="nav-extended">
+        <div class="nav-wrapper">
+          <a href="#!" class="brand-logo">Laboratorio 6</a>
+          <br>
+          <div class="nav-content">
+            <span class="nav-title">Validador de contraseñas</span>
+            <h5>Ariann Fernando Arriaga Alcántara A01703556</h5>
+            </div> 
+        </div>
+      </nav>
+      <a href="/labs156/">Regresar a lab 11</a>
+    <h4 class="center-align">Verificar contraseñas</h4>
+    <div class="divider"></div>
+    <div class="container">
+    <div class="row">   
+        <div class="section">
+            <div class="input-field col s12">
+                <input id="password1" type="password" class="validate">
+                <label for="password1">Contraseña</label>
+              </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="section">
+            <div class="input-field col s12">
+                <input id="password2" type="password" class="validate">
+                <label for="password2">Valida Contraseña</label>
+              </div>
+        </div>
+        <button id ="valido" class="btn waves-effect waves-light" type="submit" name="action" >Submit
+          <i class="material-icons right">send</i>
+        </button>
+    <h5 id="respuesta1" class="center-align"></h5>
+    <br>
+    </div>
+    </div>
+
+        
+      <div class="row">
+        <h4 class="center-align">Venta de productos</h4>
+        <div class="col s3 m3">
+                  <div class="card">
+                    <div class="card-image">
+                      <img src="https://megashop.com.mx/images/thumbnails/1200/885/detailed/4/libretas-2_q9my-gy.jpg">
+                      <h3 class="card-title" style="font-size: 40px">$100</h3>
+                    </div>
+                    <div class="card-content">
+                      <h4>Libreta de cuero</h4>
+                      <p>Libreta resistente al uso y elegante, perfecto para el regreso a clases </p>
+                    </div>
+                    <div class="center-align">
+                    <div class="card-action">
+                      <input id="Libreta" type="number" min="1" max="50" value="1" style="width: 100px; height: 30px">
+                            <a id="compra1" data-name="Libreta" data-price="100" class="waves-effect waves-light btn-small">Añadir</a>
+                    </div>
+                  </div>
+                  </div>
+            </div>   
+        
+            <div class="col s3">
+              <div class="card">
+                <div class="card-image">
+                  <img src="https://www.reviewbox.com.mx/wp-content/uploads/2019/08/carpeta-escolar-destacada.jpg">
+                  <h3 class="card-title" style="font-size: 40px">$50</h3>
+                </div>
+                <div class="card-content">
+                  <h4>Carpeta</h4>
+                  <p>Carpeta para poder llegar todos tus documentos importantes </p>
+                </div>
+                <div class="center-align">
+                <div class="card-action">
+                  <input id="Carpeta" type="number" min="1" max="50" value="1" style="width: 100px; height: 30px">
+                        <a id="compra2" data-name="Carpeta" data-price="50" class="waves-effect waves-light btn-small">Añadir</a>
+                </div>
+              </div>
+              </div>
+        </div>  
+
+        <div class="col s3">
+          <div class="card">
+            <div class="card-image">
+              <img src="https://tacnacentro.pe/wp-content/uploads/2019/10/lapiceros-ecologicos.jpg">
+              <h3 class="card-title" style="font-size: 40px">$20</h3>
+            </div>
+            <div class="card-content">
+              <h4>Bolígrafo eco friendly</h4>
+              <p>Bolígrafo de gran calidad y amigable con el ambiente. </p>
+            </div>
+            <div class="center-align">
+            <div class="card-action">
+              <input id="Boli" type="number" min="1" max="50" value="1" style="width: 100px; height: 30px">
+                    <a id="compra3" data-name="Bolígrafo" data-price="20" class="waves-effect waves-light btn-small">Añadir</a>
+            </div>
+          </div>
+          </div>
+    </div>  
+
+
+    <div class="col s3">
+      <div class="card">
+        <div class="card-image">
+          <img src="https://images.ecestaticos.com/Im6X8kurChXJICFzBGousOKTSAM=/80x0:1415x997/1200x900/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2F475%2F782%2Ffd5%2F475782fd57c45220f77bfe62ce6ef1c3.jpg">
+          <h3 class="card-title" style="font-size: 40px">$1000</h3>
+        </div>
+        <div class="card-content">
+          <h4>Mochila</h4>
+          <p>Mochila de gran calidad y diseño minimalista.</p>
+        </div>
+        <div class="center-align">
+        <div class="card-action">
+          <input id="Mochila" type="number" min="1" max="50" value="1" style="width: 100px; height: 30px">
+                <a id="compra4" data-name="Mochila" data-price="1000" class="waves-effect waves-light btn-small">Añadir</a>
+        </div>
+      </div>
+      </div>
+  </div>  
+  
+  </div>
+  <div class="center-align">
+  <div id="carro" class="row">
+    <h4>Carrito</h4>
+    <div class="divider"></div>
+    <div class="row" id="libr"></div>
+    <div class="row" id="Carp"></div>
+    <div class="row" id="Bol"></div>
+    <div class="row" id="moch"></div>
+  
+  <div class="row">
+    <div class="col s8">
+      <h5>Total:</h5>
+    </div>
+    <div id="total" class="col s3">
+      $0
+    </div>
+  </div>
+  <div class="row">
+    <div class="col s8">
+      <h6>Iva:</h6>
+    </div>
+    <div id="iva" class="col s3">
+      $0
+    </div>
+  </div>
+  <div class="row">
+    <div class="col s8">
+      <h5>Total + Iva:</h5>
+    </div>
+    <div id="totIva" class="col s3">
+      $0
+    </div>
+  </div>
+  <a id="limpiar" class="waves-effect waves-light btn">limpiar Carrito</a>
+</div>  
+</div>
+  
+</div>
+
+<br>
+      <h5 class="center-align">Preguntas del laboratorio 6:</h5>
+      <br>
+      <div class="divider"></div>
+      <div class="section">
+        <div class="row">
+          <div class="col s12">
+            <div class="card blue-grey darken-1">
+              <div class="card-content white-text">
+                <span class="card-title">¿Por qué es una buena práctica usar JavaScript para checar que sean válidos los inputs de las formas antes de enviar los datos al servidor?</span>
+                <p>  Se trata de una buena práctica debido a las posibles alteraciones que podría hacer un usuario al archivo html cambiando las validaciones que son especificadas en sí mismo produciendo una vulnerabilidad.  </p>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="divider"></div>
+        <div class="section">
+          <div class="row">
+            <div class="col s12">
+              <div class="card blue-grey darken-1">
+                <div class="card-content white-text">
+                  <span class="card-title">¿Cómo puedes saltarte la seguridad de validaciones hechas con JavaScript?</span>
+                  <p> Para poder saltar la seguridad de las validaciones hechas con un JavaScript, se tienen que desactivar los scripts en el buscador. </p>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="divider"></div>
+          <div class="section">
+            <div class="row">
+              <div class="col s12">
+                <div class="card blue-grey darken-1">
+                  <div class="card-content white-text">
+                    <span class="card-title">Si te puedes saltar la seguridad de las validaciones de JavaScript, entonces ¿por qué la primera pregunta dice que es una buena práctica?</span>
+                    <p> Se considera como una buena práctica debido a las implicaciones que tiene bloquear un script más allá de saltar validaciones, ya que cuando se bloquean los scripts igual la mayoría de las funciones de la página dejarán de funcionar, por lo que tener estos scripts activados es necesario para el correcto funcionamiento de la aplicación web. Debido a esto el validar usando JavaScript es una buena práctica porque se siguen eliminando las vulnerabilidades.
+                      </p>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+      <footer class="page-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col s12">
+              <h5 class="white-text">Referencias:</h5>
+              <p class="grey-text text-lighten-4">S, N. (2020). Validación de un formulario con Javascript. febrero 23, 2022, de desarrolloweb Sitio web: https://desarrolloweb.com/articulos/1767.php
+              </p>
+            </div>
+            <div class="col s12">
+              <p class="grey-text text-lighten-4">S, N. (2022). Introducción a JavaScript 7.3. Validación. febrero 23, 2022, de uniwebsidad. Sitio web: https://uniwebsidad.com/libros/javascript/capitulo-7/validacion#:~:text=Antes%20de%20enviar%20un%20formulario,esperar%20la%20respuesta%20del%20servido </p>
+            </div>
+            <div class="col s12">
+              <p class="grey-text text-lighten-4">S, N. (2022). Validación de formularios de datos. febrero 23, 2022, de Mozilla Sitio web: https://developer.mozilla.org/es/docs/Learn/Forms/Form_validation
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container">
+          © 2022 Copyright Text             
+          </div>
+        </div>
+      </footer>
+    <script src="function.js"></script>
+  </body>
+  
+</html>
+      
