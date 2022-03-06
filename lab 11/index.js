@@ -19,10 +19,13 @@ app.use((request, response, next) => {
     next(); //Le permite a la petición avanzar hacia el siguiente middleware
 });
 
-app.use('/', (request, response, next) => {
+app.use('/inicio', (request, response, next) => {
     response.send('Bienvenido al laboratorio 11'); 
 });
 
+app.use('/json', (request, response, next) => {
+    response.send('La utilidad del package json es poder:'); 
+});
 app.use((request, response, next) => {
     response.statusCode = 404;
     let respuesta='<!DOCTYPE html><html lang="es-mx"><head><title>laboratorios 10 | Page not found</title><meta charset="utf-8"></meta></head><body><h1>La página '+ request.url +' no se encontró</h1></body>';
