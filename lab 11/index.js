@@ -24,12 +24,13 @@ app.use('/inicio', (request, response, next) => {
 });
 
 app.use('/json', (request, response, next) => {
-    response.send('La utilidad del package json es poder:'); 
+    response.send('El archivo package.json puede ser descrito como la parte fundamental de cualquier proyecto Node. Ya que guarda cualquier metadato importante para un proyecto, el cual es requerido antes para publicar al NPM, y también define atributos funcionales de un proyecto que el npm podría utilizar para instalar dependencias o correr scripts.'); 
 });
 app.use((request, response, next) => {
     response.statusCode = 404;
     let respuesta='<!DOCTYPE html><html lang="es-mx"><head><title>laboratorios 10 | Page not found</title><meta charset="utf-8"></meta></head><body><h1>La página '+ request.url +' no se encontró</h1></body>';
     response.send(respuesta);
 });
-
+//REFERENCIAS:
+//https://heynode.com/tutorial/what-packagejson/#:~:text=Recap-,The%20package.,entry%20point%20to%20our%20package.
 app.listen(3000);
