@@ -10,12 +10,12 @@ app.set('views', 'views');
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-const rutas_136 = require('./routes/lab136.routes.js');
-const rutas_54 = require('./routes/lab54.routes.js');
+const rutas_156 = require('./routes/lab156.routes.js');
+const rutas_34 = require('./routes/lab34.routes.js');
 
-app.use('/labs54/', rutas_54);
+app.use('/labs34/', rutas_34);
 
-app.use('/labs136/', rutas_136);
+app.use('/labs156/', rutas_156);
 
 //Middleware
 app.use((request, response, next) => {
@@ -24,7 +24,7 @@ app.use((request, response, next) => {
 });
 
 app.use('/inicio', (request, response, next) => {
-    response.send('Bienvenido al laboratorio 11'); 
+    response.send('Bienvenido al laboratorio 12'); 
 });
 
 
