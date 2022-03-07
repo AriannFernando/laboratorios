@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/css/lab3.css">
+        <title>Lab1</title> <!-- Nombre de mi archivo-->
+        <meta charset="UTF-8"> <!-- set de caracteres especiales--> 
+    </head>
+
+    <body text="#ffffff" link="#ffffff" vlink="#ffffff">
+        <header> 
+            <h1>Laboratorio 3</h1>
+            <h2>Construcción de software y toma de decisiones</h2>
+            <h2>Página web personal</h2>
+            <h3>Ariann Fernando Arriaga Alcántara A01703556</h3>
+            <h3>A01703556@tec.mx</h3>
+            <img src="rotoproyecto2final_Moment.jpg" width="450px" >
+        </header>
+        <ul class="cuerpo">
+        <h2>Sobre mi</h2>
+        <p>Soy un estudiante de 20 años de Ingeniería de Tecnologías computacionales en el Tecnológico de Monterrey,
+        Me gusta leer, tocar el piano, jugar videojuegos, hacer ejercicio, programar en C++, enfocado al desarrollo de video juegos, mi hobbie favorito es el dibujo , y mi sueño es 
+        desarrollar inteligencia artificial que ayude al beneficio de la humanidad.</p>
+        <p>Links a mis pagina web favorita :</p><!--P es parrafos-->
+        <ul>
+            <li><a href="http://youtube.com">Página de youtube</a></li>
+        </ul><!--lista con bullets-->
+        <strong>Conóce un poco más de mis proyectos</strong >
+        <p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/E4aE0Alislk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
+        </p>
+        <strong>Conóce un poco más de la música que me gusta</strong>
+        <p>
+        <iframe src="https://open.spotify.com/embed/playlist/6N4OpEkWtV9dRKH5UzPiOk" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        </p>
+        <strong >Plataformas de comunicación</strong>
+        <p>
+            <a href="https://www.instagram.com/ariann_arriaga/"><img src="insta.png" width="150px" ></a>
+        </p>
+        </ul>
+        <form action="/labs34/lab3" method="POST">
+            <h2>Formulario de contacto telefónico</h2>
+            <br>
+            <label for="Phone">Coloque su número telefónico</label>
+            <input type="text" name="Phone" id="Numberphone" required>
+            <br>
+            <br>
+            <input type="submit" value="Enviar">
+        </form>
+        <a href="/labs34/">Regresar a lab 13</a>
+        <br>
+        <br>
+        <br>
+        <ul class="editor">
+        <strong>Preguntas del laboratorio 1: </strong>
+        </ul>
+        <ul class="formulario1">
+                    <li class="pregunta">¿Cuál es la diferencia entre Internet y la World Wide Web?        
+                        <ul>
+                                <br>
+                            <li>
+                                Respuesta: La diferencia principal entre Internet y la World Wide Web es que internet es la red de computadoras las cuales tienen conexión entre sí, mientras que la World Wide Web puede ser definido como el conjunto de páginas que están sobre la red de computadoras  
+                            </li>
+                        </ul>
+                    </li>
+                        <li class="pregunta">¿Cuáles son las partes de un URL?
+                        <ul>
+                            <br>
+                            <li>
+                                Respuesta: las partes que conforman a una URL son el protocólo, dominio, carpeta, recurso, parametros.
+                            </li>
+                        </ul>
+                    </li>
+                        <li class="pregunta">¿Cuál es el propósito de los métodos HTTP: GET, HEAD, POST, PUT, PATCH, DELETE?
+                        <ul>
+                            <br>
+                            <li>
+                                Respuesta: El propósito de los métodos HTTP son los siguientes:
+                            </li>
+                            <br>
+                            <li>
+                                GET: Sirve para solicitar una representación de un recurso el cual es específico, dichas solicitudes solo son para la obtención de datos.
+                            </li>
+                            <br>
+                            <li>
+                                HEAD: Sirve para solicitar una representación de un recurso similar a la del método GET, sin embargo, no tiene el cuerpo de la respuesta.
+                            </li>
+                            <br>
+                            <li>
+                                POST: Sirve para enviar datos o una entidad al servidor creando un recurso.
+                            </li>
+                            <br>
+                            <li>
+                                PUT: Sirve para cambiar o alterar todas las representaciones actuales del recurso objetivo, con la carga de la solicitud.
+                            </li>
+                            <br>
+                            <li>
+                                PATCH: Sirve para hacer cambios parciales a un recurso.
+                            </li>
+                            <br>
+                            <li>
+                                DELETE: Sirve para borrar un recurso en específico.
+                            </li>
+                        </ul>
+                    </li>
+                        <li class="pregunta">¿Qué método HTTP se debe utilizar al enviar un formulario HTML, por ejemplo cuando ingresas tu usuario y contraseña en algún sitio? ¿Por qué?
+                            <ul>
+                                <br>
+                                <li>
+                                    Respuesta: El método que se debe utilizar es el método post, esto se debe a que con ese método se usa para enviar datos al servidor creando un recurso, siendo más seguro, porque el mensaje se manda en el cuerpo del mensaje.
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="pregunta">¿Qué método HTTP se utiliza cuando a través de un navegador web se accede a una página a través de un URL? 
+                            <ul>
+                                <br>
+                                <li>
+                                    Respuesta: El método que se debe utilizar es el método GET, esto se debe que al utilizar GET el cual es una petición, en el cual el recurso es solicitado por medio de la URL al servidor web.
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="pregunta">Un servidor web devuelve una respuesta HTTP con código 200. ¿Qué significa esto? ¿Ocurrió algún error?
+                            <ul>
+                                <br>
+                                <li>
+                                    Respuesta:  La respuesta HTTP con código 200 significa que la solicitud ha tenido éxito, y una respuesta 200 se puede almacenar de forma predeterminada, de igual forma el significado de exito depende del metodo de solicitud http. Esto significa que no ocurrio un error.
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="pregunta">¿Es responsabilidad del desarrollador corregir un sitio web si un usuario reporta que intentó acceder al sitio y se encontró con un error 404? ¿Por qué?
+                            <ul>
+                                <br>
+                                <li>
+                                    Respuesta: No es responsabilidad del desarrollador corregir el sitio web, debido a que el error 404 hace referencia a que una solicitud contiene un error, es decir, el servidor no ha podido encontrar nada que coincida con la URL de solicitud
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="pregunta">¿Es responsabilidad del desarrollador corregir un sitio web si un usuario reporta que intentó acceder al sitio y se encontró con un error 500? ¿Por qué?
+                            <ul>
+                                <br>
+                                <li>
+                                    Respuesta:  Si es responsabilidad del desarrollador corregir el sitio web, debido a que el error 500 hace referencia a que el servidor se encontró con una condición inesperada que le impide cumplir la solicitud
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="pregunta">¿Qué significa que un atributo HTML5 esté depreciado o desaprobado (deprecated)? Menciona algunos elementos de HTML 4 que en HTML5 estén desaprobados.
+                            <ul>
+                                <br>
+                                <li>
+                                    Respuesta: Un atributo despreciado significa que ese atributo forma parte del estandar de html el cual su uso ya no se recomienda debido a la actualización de herramientas. Algunos elementos de HTML 4 que en HTML5 estén desaprobados son:<!-- <acronym>, <applet>, <basefont>, <big>, <center> --> 
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="pregunta">¿Cuáles son las diferencias principales entre HTML 4 y HTML5?
+                            <ul>
+                                <br>
+                                <li>
+                                    Respuesta: Las principales diferencias de HTML 4 y HTML 5 son: Para definir un juego de caracteres en html5 es introducido el atributo para la etiqueta meta charset=”UTF-8″, Se simplifíca el doctype, algunos atributos de html 4 son despreciados, al igual que algunos atributos como name cambian, nuevos atributos y elementos son introducidos, al igual que HTML5 puede incluir elementos de SVG y MathML.
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="pregunta">¿Qué componentes de estructura y estilo tiene una tabla?
+                            <ul>
+                                <br>
+                                <li>
+                                    Respuesta: Los componentes de estructura y estilo que tiene una tabla, son cuatro contenedores principales, el cual es table, osea el contenedor principal, thead para el encabezado, tbody donde va el cuerpo de la tabla y el tfoot para el pie de página, dentro de tbody puede ir tr el cual representa a las filas que contienen a las celdas y td las cuales representan las celdas. De igual manera th permite tener celdas encabezadoras y el style scope, permite declarar las celdas que se afectarán por el encabezado. 
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="pregunta">¿Cuáles son los principales controles de una forma HTML5?
+                            <ul>
+                                <br>
+                                <li>
+                                    Respuesta: los principales  controles de una forma HTML5 son:   button, checkbox, file, hidden, image, password, radio, reset, submit, text, search, url y tel
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="pregunta">¿Qué tanto soporte HTML5 tiene el navegador que utilizas? Puedes utilizar la siguiente página para descubrirlo: <a target="_blank" href="http://html5test.com/">http://html5test.com/</a> (Al responder la pregunta recuerda poner el navegador que utilizas)
+                            <ul>
+                                <br>
+                                <li>
+                                    Respuesta: el navegador que utilizo el cual es google chrome (Chrome Dev 98.0.4758.82 on Windows 10) tiene 476 de 555 puntos
+                                </li>
+                            </ul></li>
+                        <br>
+                        <li class="pregunta">
+                            <strong>Sobre el ciclo de vida y desarrollo de los sistemas de información:</strong>
+                            <ul>
+                                <br>
+                                <li>
+                                    ¿Cuál es el ciclo de vida de los sistemas de información?
+                                    <ul>
+                                        <li>
+                                            Respuesta:El ciclo de vida de los sistema de información puede ser definido como las fases de analisís, diseño para el desarrollo óptimo de software. Las fases que incluye el ciclo son nacimiento, desarrollo, operación, mantenimiento y muerte.
+                                        </li>
+                                    </ul>
+                                </li>
+                                <br>
+                                <li>
+                                    ¿Cuál es el ciclo de desarrollo de sistemas de información?
+                                    <ul>
+                                        <li>
+                                            Respuesta: El ciclo de desarrollo de sistemas de información es un método que facilita la realización de sistemas de información, tiene el propósoto de que los gestores puedan planificar el proceso de diseño en base a los requisitos del usuario, otra función que tiene el poder de definir el tiempo de desarrollo e inversión en proyecto. Las fases de este ciclo son siete: Planificación del concepto, definición de requisitos, diseño, fase de desarrollo y pruebas, puesta en marcha, operaciones y mantenimientos y disposición
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+        <ul class="editor">
+            <strong>Preguntas del laboratorio 3: </strong>
+        </ul>
+        <ul class="formulario1">
+            <li class="pregunta"> Como ingeniero de software ¿cuál es tu recomendación sobre el uso de !important en un CSS?        
+                <ul>
+                        <br>
+                    <li>
+                        Respuesta: Mi recomendación como ingeniero de software, sobre el uso de !important en un CSS es que sea medido, controlado y limitado a las necesidades del sitio, y siempre usarse en elementos particulares para garantizar el buen funcionamiento, su uso es cuando se tiene una regla precedente a las demás, por ejemplo, cuando una clase interactua con un selector primario que es de estilo diferente.
+                    </li>
+                </ul>
+            </li>
+                <li class="pregunta"> Si se pone una imagen de fondo en una página HTML, ¿por qué debe escogerse con cuidado?
+                <ul>
+                    <br>
+                    <li>
+                        Respuesta: Debido a la posible obstrucción de la visibilidad de los elementos del sitio web, tal es como un texto que no resalte del fonde
+                    </li>
+                </ul>
+            </li>
+            <li class="pregunta"> Como ingeniero de software, ¿cuál es tu recomendación al elegir las unidades de un propiedad de estilo entre %, px y pt?        
+                <ul>
+                        <br>
+                    <li>
+                        Respuesta: La recomendación al elegir unidades depende de la necesidad, ya que % al ser una unidad relativa, funciona muy bien cuando se trabaja con proporciones de elementos o dentro de contenedores y esto mismo hace que se adapte a diferentes tamaños de pantalla adecuando la proporción, el uso de px funciona como una medida relativa pero destaca en proporcionar exactitud en la visualización de elementos de un tamaño definido, en el caso de pt o punto se usa cuando un elemento en pantalla quiere ser puesto en tamaño real, es decir no es una unidad relativa sino establece medidas fijas.  
+                    </li>
+                </ul>
+            </li>
+                <li class="pregunta">¿Por qué el uso de una versión minimizada del CSS mejora el rendimiento del sitio?
+                <ul>
+                    <br>
+                    <li>
+                        Respuesta: la versión minimizada del CSS mejora el rendimiento porque remueve bytes del archivo lo que hace un proceso de descarga, análisis y ejecución con más velocidad.
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        </body>
+        <br>
+        <br>
+        <footer>
+            <ul class="editor">
+            <strong><p>El editor de texto utilizado para el desarrollo de esta página fue Visual Studio Code<p></strong>
+            <img src="VS-Code.png" width="150px" >
+            <p><a href="https://code.visualstudio.com/">Visita Visual Studio Code</a></p>
+            </ul>
+            <br>
+            <ul class="referencias">
+                <br>
+                <strong>REFERENCIAS:</strong>
+                <br>
+                <br>
+                <li>
+                    S.A. (2018). 200 OK. febrero 14, 2022, de Mozilla Sitio web: https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html
+                </li>
+                <br>
+                <li>
+                    Pieters S. (2014). HTML5 Differences from HTML4. febrero 14, 2022, de W3C Sitio web: https://www.w3.org/TR/html5-diff/
+                </li>
+                <br>
+                <li>
+                    S.A. (2015). TABLAS EN HTML. febrero 14, 2022, de HTMLQUICK Sitio web: https://www.htmlquick.com/es/tutorials/tables.html
+                </li>
+                <br>
+                <li>
+                    Aviani, G. (2019). An introduction to HTTP: everything you need to know. febrero 14, 2022, de freecodecamp Sitio web: https://www.freecodecamp.org/news/http-and-everything-you-need-to-know-about-it/
+                </li>
+                <br>
+                <li>
+                    Copes, F. (2019). The HTML Handbook. febrero 14, 2022, de freecodecamp. Sitio web: https://www.freecodecamp.org/news/the-html-handbook/
+                </li>
+                <br>
+                <li>
+                    Ramos, C. (2022). HTTP Request Methods – Get vs Put vs Post Explained with Code Examples. febrero 14, 2022, de freecodecamp Sitio web: https://www.freecodecamp.org/news/http-request-methods-explained/
+                </li>
+                <br>
+                <li>
+                    S, A. (2018). 500 Internal Server Error. febrero 14, 2022, de mozilla Sitio web: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500
+                </li>
+                <br>
+                <li>
+                    Marco, B. (2020). Elementos obsoletos. febrero 14, 2022, de mclibre Sitio web: https://www.mclibre.org/consultar/htmlcss/html/html-obsoletos.htm
+                </li>
+                <br>
+                <li>
+                    S, A. (2017). Métodos de petición HTTP. febrero 14, 2022, de mozilla Sitio web: https://developer.mozilla.org/es/docs/Learn/Forms/Basic_native_form_controls
+                </li>
+                <br>
+                <li>
+                    S, A. (2019). Controles de formulario originales. febrero 14, 2022, de mozilla Sitio web: https://developer.mozilla.org/es/docs/Web/HTTP/Methods
+                </li>
+                <br>
+                <li>
+                    S, A. (2018). El ciclo SDLC en 7 fases. febrero 14, 2022, de viewnext Sitio web: https://www.viewnext.com/el-ciclo-sdlc-en-7-fases/
+                </li>
+                <br>
+                <li>
+                    Naranjo, M. (2018). Ciclo de vida de un sistema de informacion. febrero 14, 2022, de SlideShare Sitio web: https://www.slideshare.net/MonicaNaranjo20/ciclo-de-vida-de-un-sistema-de-informacion-93192099#:~:text=Ciclo%20de%20vida%20de%20un%20sistema%20%EF%82%A7%20El%20ciclo%20de,del%20analista%20y%20del%20usuario
+                </li>
+                <br>
+                <li>
+                    Jefferson M. (2020). !Important: ¿Qué es y cuándo usarlo?. febrero 15, 2022, de UXDiv Sitio web: https://uxdivi.com/blog/important-que-es-y-cuando-usarlo
+                </li>
+                <br>
+                <li>   
+                    Guerras A. (2016). Optimización CSS para mejorar el rendimiento de tu web. febrero 15, 2022, de AUKERA Sitio web: https://aukera.es/blog/optimizacion-css-mejora-el-rendimiento-de-tu-web/
+                </li>
+                <br>
+            </ul>
+            <br>
+        </footer>
+
+</html>

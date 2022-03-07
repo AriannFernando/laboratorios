@@ -1,5 +1,3 @@
-
-const fs = require('fs');
 const numeros = [
     {nombre: "7715682112"},
 ];
