@@ -1,0 +1,52 @@
+<%- include('includes/head.ejs') %>
+<h1>Bienvenido al laboratorio 18</h1>
+<main>
+    <h2>Visita los laboratorios previos</h2>
+    <p> Dos laboratorios:</p>
+    <ul>
+        <li><a href="/labs34/lab3">laboratorio 3</a></li>
+        <li><a href="/labs34/lab4">laboratorio 4</a></li>
+    </ul>
+        <p> Números telefónicos registrados:</p>
+        <div class="row">
+            <% if (numeros.length > 0) { %>
+                <% for (let elemento of numeros) { %>
+                <div class="col l3 m4 s12">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="<%= elemento.imagen %>">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4"><%= elemento.numero %><i class="material-icons right">more_vert</i></span>
+                        <p><%= elemento.created_at %></p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4"><%= elemento.numero %><i class="material-icons right">close</i></span>
+                        <p><%= elemento.nombre %></p>
+                    </div>
+                </div>
+            </div>
+            <% } %>
+            <% } else { %>
+                <h1>no hay numeros registrados</h1>
+            <% } %>   
+            
+        </div>
+
+        <% if (ultimo_numero != '') { %>
+            <br>
+            <p>El último numero agregado fue: <%= ultimo_numero %></p>
+        <% } %>
+        <form action="/labs34/" method="POST">
+            <h2>Filtra por id de numero</h2>
+            <br>
+            <input type="hidden" name="_csrf" value="<%= csrfToken %>" >
+            <label for="idnum">ID: </label>
+            <input type="number" id="idnum" name="idnum" >
+            <br>
+            <br>
+            <br>
+            <input type="submit" value="Enviar">
+            </form>
+    </main>
+<%- include('includes/foot.ejs') %>
