@@ -31,11 +31,11 @@ app.use((request, response, next) => {
     next();
 });
 
-app.use('/users', rutas_usuarios);
-
 app.use('/labs34/', rutas_34);
 
 app.use('/labs156/', rutas_156);
+
+app.use('/users', rutas_usuarios);
 
 //Middleware
 app.use((request, response, next) => {
