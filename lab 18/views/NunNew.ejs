@@ -1,0 +1,22 @@
+<%- include('includes/head.ejs') %>
+    <h1>Bienvenido a este sitio de laboratorio 24</h1>
+    <h2>Registro de nuevo numero:</h2>
+    <main>
+         <form action="/labs156/newnum" method="POST">
+            <input type="hidden" name="_csrf" value="<%= csrfToken %>" >
+            <h2>Formulario de contacto telefónico</h2>
+            <br>
+            <label for="nombre">Nombre: </label>
+            <input type="text" id="nombre" name="nombre" >
+            <br>
+            <label for="Phone">Coloque su número telefónico:</label>
+            <input type="text" name="Phone" id="Numberphone" required>
+            <br>
+            <label for="Imagen">Coloque una imagen: </label>
+            <input type="text" id="imagen" name="imagen">
+            <br>
+            <br>
+            <input type="submit" value="Enviar">
+        </form> 
+        <br><br>
+<%- include('includes/foot.ejs') %>

@@ -43,6 +43,20 @@ exports.respuesta = (request, response, next) => {
     response.render('res');
 };
 
+exports.newNum_get = (request, response, next) => {
+    response.render('NunNew');
+};
+
+exports.newNum_post = (request, response, next) => {
+    const numero = new Numero(request.body.nombre, request.body.Phone, request.body.imagen);
+    numero.save().then(() => {
+        request.session.info = numero.numero + ' fue registrado con éxito';
+        response.setHeader('Set-Cookie', 'ultimo_numero='+numero.numero);
+        response.redirect('/labs156/');
+    })
+    .catch(err => console.log(err));
+};
+
 exports.lab1_get = (request, response, next) => {
     response.sendFile(path.join(__dirname, '..', 'views', 'lab 1.html'));
 };
