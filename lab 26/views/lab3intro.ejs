@@ -1,0 +1,91 @@
+<%- include('includes/head.ejs') %>
+<h1>Bienvenido al laboratorio 26</h1>
+<main>
+    <h2>Visita los laboratorios previos</h2>
+    <p> Dos laboratorios:</p>
+    <ul>
+        <li><a href="/labs34/lab3">laboratorio 3</a></li>
+        <li><a href="/labs34/lab4">laboratorio 4</a></li>
+    </ul>
+        <p> Números telefónicos registrados:</p>
+        <div class="row">
+            <% if (numeros.length > 0) { %>
+                <% for (let elemento of numeros) { %>
+                <div class="col l3 m4 s12">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="<%= elemento.imagen %>">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4"><%= elemento.numero %><i class="material-icons right">more_vert</i></span>
+                        <p><%= elemento.created_at %></p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4"><%= elemento.numero %><i class="material-icons right">close</i></span>
+                        <p><%= elemento.nombre %></p>
+                    </div>
+                </div>
+            </div>
+            <% } %>
+            <% } else { %>
+                <h1>no hay numeros registrados</h1>
+            <% } %>   
+            
+        </div>
+
+        <% if (ultimo_numero != '') { %>
+            <br>
+            <p>El último numero agregado fue: <%= ultimo_numero %></p>
+        <% } %>
+        <form action="/labs34/" method="POST">
+            <h2>Filtra por id de numero</h2>
+            <br>
+            <input type="hidden" name="_csrf" value="<%= csrfToken %>" >
+            <label for="idnum">ID: </label>
+            <input type="number" id="idnum" name="idnum" >
+            <br>
+            <br>
+            <br>
+            <input type="submit" value="Enviar">
+            </form>
+            <div id="respuesta_ajax">Aquí aparecerán los datos del dueño...</div>
+            <h2>Api mapbox</h2>
+            <div id='map' style='width: 400px; height: 300px;'></div>
+            <script>
+                mapboxgl.accessToken = 'pk.eyJ1IjoibWFuZHVrb2dyIiwiYSI6ImNsMWt6bnJpcTAwdG0zaW53anV4aWEwanMifQ.YExCePsVa804tBeLNHrKXw';
+                var map = new mapboxgl.Map({
+                container: 'map',
+                style: 'mapbox://styles/mapbox/streets-v11'
+            });
+            </script>
+<script>
+    const accion_asincrona = (e) => {
+        console.log(e.target.dataset.duenio);
+
+        fetch('/users/view/'+e.target.dataset.duenio, {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json',
+ 
+            }
+
+        }).then(result => {
+             return result.json(); //Regresa otra promesa
+        }).then(data => {
+            console.log(data);
+            document.getElementById("respuesta_ajax").innerHTML = '<div class="row"><div class="col s12 m6"><div class="card blue-grey darken-1"><div class="card-content white-text"><span class="card-title">El dueño es: '
+                + data.user.nombre +
+                '</span></div></div></div></div>';
+        }).catch(err => {
+            console.log(err);
+        });
+    };
+    
+    document.querySelectorAll('#elemento_ajax').forEach((e)=> {
+        e.addEventListener('click', accion_asincrona);
+    });    
+    
+    
+    </script>
+    </main>
+<%- include('includes/foot.ejs') %>
